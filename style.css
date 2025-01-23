@@ -1,0 +1,272 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: linear-gradient(to right, #f4f4f4 #f3cf04);
+  color: #333;
+  background: #000000;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background: linear-gradient(to right, #f3cf04, #FF6600);
+  border-radius: 10px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #f3cf04, #FF6600); /* Gradient from dark to yellow */
+  color: #fff;
+  padding: 0px 0;
+  position: sticky; /* Sticky header */
+  top: 0; /* Keep it at the top */
+  z-index: 1000; /* Ensures the header stays above other content */
+  width: 100%; /* Ensure it stretches the full width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+ nav  {
+  text-align: center;
+  align-items: center;
+ }
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background-color: #ffcc00; /* Color change on hover */
+}
+
+nav a:active {
+  background-color: #e90000; /* Color change when button is clicked */
+  color: #fff; /* Ensures text stays white */
+}
+
+/* Main Section */
+main {
+  padding: 40px 0;
+  max-width: 1500px;
+  margin: 20px auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.webp-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+  gap: 20px;
+}
+
+.image-container {
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.blog-post {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.blog-post p {
+  font-size: 1.1rem;
+}
+
+.blog-post a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
+}
+
+/* FAQ Container Styling */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Question Styling */
+.faq-question {
+  font-size: 1.2rem;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.faq-question:hover {
+  background-color: #e9ecef;
+}
+
+/* Answer Styling */
+.faq-answer {
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 3px solid #007BFF;
+  background-color: #dfd9d9;
+  display: none; /* Hidden by default */
+  border-radius: 0 5px 5px 0;
+}
+
+/* Active Answer Display */
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+select:hover {
+  border-color: #007BFF;
+}
+
+select:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Dropdown Option Styling */
+option {
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+footer ul li {
+  margin: 0 15px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Header */
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav  {
+    text-align: center;
+    align-items: center;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+    padding: 8px 12px;
+  }
+  
+
+
+  /* Main Section */
+  main {
+    padding: 20px 0;
+    margin: 10px auto;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .blog-post {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .blog-post h3 {
+    font-size: 1.6rem;
+  }
+
+  .blog-post p {
+    font-size: 1rem;
+  }
+  .footer {
+    text-align: center;
+    align-items: center;
+  }
+
+  /* FAQ Question Styling */
+  .faq-question {
+    font-size: 1rem;
+  }
+
+  /* FAQ Answer Styling */
+  .faq-answer {
+    font-size: 0.9rem;
+  }
+}
