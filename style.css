@@ -7,7 +7,7 @@
 
 /* Body styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   background-color: linear-gradient(to right, #f4f4f4 #f3cf04);
   color: #333;
@@ -97,7 +97,7 @@ section {
   border-radius: 10px;
 }
 
-.blog-post {
+.red {
   background: #fff;
   padding: 20px;
   margin-bottom: 20px;
@@ -105,16 +105,16 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.blog-post h3 {
+.red h3 {
   font-size: 1.8rem;
   margin-bottom: 15px;
 }
 
-.blog-post p {
+.red p {
   font-size: 1.1rem;
 }
 
-.blog-post a {
+.red a {
   display: inline-block;
   margin-top: 10px;
   font-size: 1.2rem;
@@ -122,7 +122,7 @@ section {
   text-decoration: none;
 }
 
-.blog-post a:hover {
+.red a:hover {
   text-decoration: underline;
 }
 
@@ -162,6 +162,50 @@ section {
 /* Active Answer Display */
 .faq-item.active .faq-answer {
   display: block;
+}
+#recent-blogs {
+  background: #f9f9f9;
+  padding: 40px 0;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+#recent-blogs h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.blog-item {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.blog-item p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.blog-item a {
+  font-size: 1.2rem;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.blog-item a:hover {
+  text-decoration: underline;
+}
+
+.blog-item strong {
+  color: #333;
 }
 
 select:hover {
@@ -243,12 +287,12 @@ footer ul li a:hover {
     font-size: 1.8rem;
   }
 
-  .blog-post {
+  .red {
     padding: 15px;
     margin-bottom: 15px;
   }
 
-  .blog-post h3 {
+  .red h3 {
     font-size: 1.6rem;
   }
 
